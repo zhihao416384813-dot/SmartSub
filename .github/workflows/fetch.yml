@@ -23,6 +23,8 @@ jobs:
 
     - name: 迁出代码
       uses: actions/checkout@v4
+      with:
+        ref: main
 
     - name: 安装Python
       uses: actions/setup-python@v5
@@ -193,13 +195,7 @@ jobs:
           echo "✅ 发现节点文件，开始筛选..."
           python ./node_quality_filter.py || echo "⚠️ 节点筛选遇到错误"
 
-          # 生成订阅 URL (如果节点筛选成功)
-          if [ -f "sub/high_quality_nodes.txt" ]; then
-            echo "🔗 生成订阅 URL..."
-            python ./generate_subscription_url.py || echo "⚠️ 订阅URL生成遇到错误"
-          else
-            echo "⚠️ 未发现高质量节点文件，跳过订阅URL生成"
-          fi
+          # node_quality_filter.py 已生成并发送订阅 URL，避免重复推送
         else
           echo "⚠️ 未发现节点文件，跳过筛选"
         fi
