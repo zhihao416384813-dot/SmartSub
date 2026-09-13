@@ -237,9 +237,6 @@ jobs:
         fi
 
     - name: 推送更改
-      # 只在有提交时才推送
+      # 使用 checkout 提供的 GITHUB_TOKEN，避免未固定版本的第三方 Action
       if: success()
-      uses:  ad-m/github-push-action@master
-      with:
-         github_token: ${{ secrets.GITHUB_TOKEN }}
-         branch: main
+      run: git push origin main
