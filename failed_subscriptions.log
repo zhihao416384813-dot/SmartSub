@@ -11352,3 +11352,19 @@ https://github.com/free18/v2ray/blob/5adfd6c5/README.md?plain=1#L15-L21	http_429
 
 === 2026-09-19 06:28:39 - 失效订阅 (1 个) ===
 https://liangxin.xyz/api/v1/liangxin?OwO=82bf385b563bb02b6a830d91c7d771f8	http_403
+
+=== 2026-09-20 06:18:52 - 失效订阅 (14 个) ===
+https://3x.lbruh.xyz:2096/api/all_in_one	request_failed
+https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.277	http_403
+https://web.archive.org/web/20260903110250id_/https://www.trae.ai/pricing	http_429
+https://sus.clodom.link/message/api/sourlist/11d0fde181af461da5613475328dfd9f	http_403
+http://musicmap.info/	http_202
+https://cdn4.telesco.pe/file/r1JoRTgmCvUZc_2Kvr-zVl_-ZxhuZElhvP1WEKiEeVpnAnO6iYEyQqP_XByMYE-oj3_nw1_b2JHQetWYr3r_PuqdAS1T3Nr87nPiBFaQdRmHgnhw_RHMzXoaF6Po_uouXsJr7EW05S4V7SzyaY6LHfAoSdebCWTJeT9mu1wswjY1GIXAXCsiw_KpPFmGgbkkrJ7mf5Dk99nCrG8qRPxl_6zJu4vikBosEAvycRFZW3A5TnjQma9I8C79owoQOIzLBCZyfrVs6FCFw5UWhZd1QFe7sZAaLLdHCW6-BqFv4achxm8JG8rCD9KegVh7cswXYdktpXO-ooOantE6Q-vBmw	http_500
+http://3.5.0.3/	request_failed
+https://cdn4.telesco.pe/file/hnZuzTBNnhcfzkB6M3RMaELwYwdYzgKsc-kUU6HPaR9jOOfqg9u5H5BEi7NeGesAggVrHTmd0-m-TFYhil9voyPtVh4fjY26d2sjdejMaFTDEMaa66X5J68CSvdQuV-yxCgplJhEfhx2wKJOqy6R0zE34_ij7dj_K9-zm4bMZPTUD0YKoT071GMHcZnxQ9Ah8DPIkTIPv80mRpko0QCQTYBq8Gy34vAyZSFcTr_gc1ASGfKKQ9ILVNlJZS4lxxqpaHYYQwHaftnaRiFqpx5JtF-rjZrXiQ-oCVVAbj3ZWqHZF4N6-51KrV_GUNnhhrqHHOHts_S9j3z41ilT1Pqx5g	http_500
+http://0.9.4.12/	request_failed
+http://apps.apple.com/app/id6754511751	request_failed
+http://apps.apple.com/us/app/connect-now/id6749354119	request_failed
+http://apps.apple.com/us/app/bamboo-dragonfly/id6473621095	request_failed
+http://apps.apple.com/us/app/openvxs-vpn/id6757167153	request_failed
+http://apps.apple.com/app/id6759716475	request_failed
