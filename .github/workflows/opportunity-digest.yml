@@ -1,0 +1,21 @@
+name: Opportunity Digest
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 0 * * *' # 08:15 Asia/Shanghai; GitHub scheduling may run late.
+permissions:
+  contents: read
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Send linked digest to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/opportunity_digest.py
