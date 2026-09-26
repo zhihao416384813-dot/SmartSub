@@ -200,6 +200,13 @@ jobs:
           echo "⚠️ 未发现节点文件，跳过筛选"
         fi
 
+    - name: Send daily opportunity digest
+      if: success() || failure()
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      run: python scripts/opportunity_digest.py
+
     - name: Commit
       run: |
         git config --global user.name "GitHub Actions"
